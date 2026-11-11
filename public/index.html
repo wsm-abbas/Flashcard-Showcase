@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Study Interface</title>
+
+    <!-- Meta tags for better SEO and social sharing -->
+    <meta name="description" content="Modern flashcard study interface with spaced repetition algorithm">
+    <meta name="keywords" content="flashcards, study, learning, spaced repetition">
+    <meta name="author" content="Flashcard App">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#667eea">
+
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+    <!-- Manifest for PWA capabilities -->
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <div id="app">
+        <!-- Vue app will mount here -->
+        <div class="loading-container">
+            <div class="spinner"></div>
+            <p>Loading flashcards...</p>
+        </div>
+    </div>
+    <script type="module" src="/js/app.js"></script>
+
+    <!-- Analytics and Error Tracking (placeholder) -->
+    <script>
+        // Error tracking and analytics would be implemented here
+        window.addEventListener('error', (event) => {
+            console.error('Application Error:', event.error);
+            // Send to error tracking service
+        });
+
+        window.addEventListener('unhandledrejection', (event) => {
+            console.error('Unhandled Promise Rejection:', event.reason);
+            // Send to error tracking service
+        });
+    </script>
+</body>
+</html>
